@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+}
+#graphic {
+  animation: graphic 3s alternate infinite;
+}
+
+@keyframes graphic {
+  from {
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    transform-box: fill-box;
+  }
+}
+
+#right-foot {
+  animation: rfoot 0.5s alternate infinite;
+}
+
+@keyframes rfoot {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(2%);
+  }
+}
+
+#torso {
+  animation: atorso 1s alternate infinite;
+}
+
+@keyframes atorso {
+  from {
+    transform: opacity(0);
+  }
+  to {
+    transform: opacity(1);
+  }
+}
